@@ -5,7 +5,7 @@
 ---
 
 ## 🖥️ **Demo en Vivo**
-👉[ [Prueba la app aquí](#) (https://tatiana-017.github.io/amigo-secreto/)
+👉 Prueba la app aquí: (https://tatiana-017.github.io/amigo-secreto/)
 
 ---
 
