@@ -1,0 +1,245 @@
+:root {
+    --color-primary: #FFD1A9;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-result: #05DF05;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 90vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header-banner {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    text-align: center;
+    padding: 40px 0 0;
+}
+
+.header-banner img {
+    height: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 64px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.main-title {
+    font-size: 52px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    gap: 10px; 
+}
+
+.input-name {
+    width: 100%;
+    height: 50px; 
+    padding: 10px 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.input-name:focus {
+    border-color: var(--color-button);
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary); 
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+    border-color: var(--color-button-hover);
+}
+
+.material-symbols-outlined {
+    font-size: 28px;
+}
+
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: var(--color-result);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.name-list li {
+    background: var(--color-white);
+    color: var(--color-text);
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.name-emoji {
+    font-size: 20px;
+}
+
+.boton-eliminar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+.boton-eliminar:hover {
+    color: darkred;
+    transform: scale(1.2);
+    box-shadow: none; 
+}
+
+.boton-eliminar .material-symbols-outlined {
+    font-size: 20px;
+    box-shadow: none;
+}
+
+
+
